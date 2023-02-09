@@ -8,7 +8,7 @@
 ## 本地开发
 
 ### 不基于 docker
-1、进入云机器，启动数据库
+1、进入云机器，启动数据库（开发用的远程数据库）
 ```bash
 docker-compose -f docker-compose.devdb.yml up -d
 ```
@@ -51,9 +51,4 @@ docker build --build-arg NODE_ENV=production -t strapiapp:latest -f Dockerfile.p
 ```bash
 docker-compose -f docker-compose.prod.yml down
 docker-compose -f docker-compose.prod.yml up -d
-```
-4.只启动数据库，供开发环境使用：
-
-```bash
-docker-compose -f docker-compose.prod.yml up -d strapiDB
 ```
