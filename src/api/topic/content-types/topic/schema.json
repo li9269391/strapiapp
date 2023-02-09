@@ -48,6 +48,30 @@
         "option 3:3"
       ],
       "customField": "plugin::multi-select.multi-select"
+    },
+    "cke1": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "cke2": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "cke3": {
+      "type": "customField",
+      "options": {
+        "preset": "blockBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "edit": {
+      "type": "richtext"
     }
   }
 }
