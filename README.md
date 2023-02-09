@@ -53,6 +53,7 @@ docker build --build-arg NODE_ENV=production -t strapiapp:latest -f Dockerfile.p
 ```
 
 2.创建 .env(参考示例)
+- 注意 DATABASE_PORT=33306，对应 docker-compose.prod 的设置
 
 3.启动服务
 ```bash
