@@ -1,9 +1,10 @@
 # 🚀 Getting started with Strapi
 
 ## feature
-- admin 语言环境增加中文
+- admin 语言环境增加中文（内置插件）
 - ali-oss（上传文件，仅支持英文名）
 - 内容类型支持多选（选项配置，仅支持英文名）
+- ckeditor富文本编辑器
 
 ## 本地开发
 
