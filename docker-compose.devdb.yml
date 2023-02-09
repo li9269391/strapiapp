@@ -1,0 +1,23 @@
+# path: ./docker-compose.devdb.yml 在云服务器启动，用于本地开发
+
+version: '3'
+services:
+  strapiDevDB:
+    container_name: strapiDevDB
+    platform: linux/amd64 #for platform error on Apple M1 chips
+    restart: unless-stopped
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_USER: strapidev
+      MYSQL_ROOT_PASSWORD: YPa1Z3w65qnz91Z3
+      MYSQL_PASSWORD: strapidevadmin
+      MYSQL_DATABASE: strapidev
+    volumes:
+      - strapidev-data:/var/lib/mysql # 数据卷所挂载路径设置
+      #- ./data:/var/lib/mysql # if you want to use a bind folder
+    ports:
+      - '33305:3306'
+
+volumes:
+  strapidev-data: # 数据卷，查看 docker volume ls

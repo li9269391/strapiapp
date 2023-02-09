@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topics",
+  "info": {
+    "singularName": "topic",
+    "pluralName": "topics",
+    "displayName": "topic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hgj": {
+      "type": "json"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "opt": {
+      "type": "enumeration",
+      "enum": [
+        "mo",
+        "he"
+      ]
+    },
+    "opt1": {
+      "type": "customField",
+      "options": [
+        "option 1:1",
+        "option 2:2",
+        "option 3:3"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    }
+  }
+}

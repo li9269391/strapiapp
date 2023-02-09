@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "xxxes",
+  "info": {
+    "singularName": "xxx",
+    "pluralName": "xxxes",
+    "displayName": "xxx",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "x1": {
+      "type": "string"
+    },
+    "num": {
+      "type": "integer"
+    }
+  }
+}
